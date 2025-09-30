@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Redbull Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bce849306a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <video autoplay muted loop playsinline id="bg-video">
+    <source src="images/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    <div class="container">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About Me">About Me</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <!--Hero Section with Background Video -->
+            <div class="hero">
+                <video autoplay muted loop playsinline id="bg-video">
+                    <source src="images/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+               <div class="hero-content">
+                <p class="intro-line">Hi, I'm</p>
+                <h1 class="intro-name">
+                    <span class="highlight">Veekshitha</span><br> BELADARA NANJEGOWDA <br> software developer
+                 </h1>
+                </div>
+                <!-- Optional: Sound toggle button -->
+                <button class="sound-btn" onclick="document.getElementById('bg-video').muted = !document.getElementById('bg-video').muted;">
+                    🔊 Toggle Sound
+                </button>
+            </div>
+        </div>
+    </div>
+<!----------about---------------------------->
+<div id="About Me">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Driver1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Master’s student in Data Science at NJIT, building on a Computer Science background with a solid foundation in data structures, algorithms, and software engineering principles. My experience spans multiple programming languages, including Python, Java, and C++, with a growing interest in C# and full-stack development.
+
+I am passionate about creating high-performance, reliable, and user-focused software, and I thrive in fast-paced environments where innovation and precision matter. My academic projects and research emphasize data analysis, predictive modeling, and system optimization, which align closely with the complex challenges of aerodynamics, CFD, and performance analysis in Formula 1.
+
+Motivated by a deep interest in motorsport technology and real-time data-driven solutions, I am eager to contribute to Red Bull Racing & Technology by delivering state-of-the-art software tools that enhance aerodynamic performance and help push the limits of racing innovation.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                </div>
+                 <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Chatbot development</span><br>Camplin Innovations Lmtd Bengaluru India</li>
+                        <li><span>Unreal Engine and Video Assisting</span><br>Mtss At NJIT</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2024-current</span><br>Masters in Data Science in New Jersey Institute of Technology</li>
+                        <li><span>2020-2024</span><br>Bachelors in Computer Science and engineering</li>
+                        <li><span>2023</span><br>Internship at Camplin Innovation ltm as Backend Developer.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------Skills------------------------------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Full-Stack Development</h2>
+                <p>Proficient in designing and building complete web applications, handling both front-end and back-end development. Skilled in creating responsive user interfaces with React.js, developing server-side logic with Node.js, Express, and Django, and managing databases using MongoDB and SQL. Experienced in implementing RESTful APIs, user authentication, CRUD operations, and deploying applications for real-world use.
+                </p>
+                <a href="https://github.com/dashboard">Learn more</a>
+            </div>
+             <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX design</h2>
+                <p>UI/UX Design: Skilled in developing responsive and user-friendly interfaces using HTML, CSS, JavaScript, and React.js, with experience creating intuitive navigation flows, interactive components, and dynamic web applications such as a movie rental platform, expense tracker, and blood bank management system. Strong focus on usability, accessibility, and user-centered design principles, ensuring seamless integration of front-end interfaces with backend systems to deliver engaging and functional digital experiences.
+                </p>
+                <a href="https://github.com/dashboard">Learn more</a>
+            </div> 
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App design</h2>
+                <p>Experienced in designing and developing functional mobile and web applications with a strong emphasis on clean UI, usability, and smooth user experience. Built applications such as an expense tracker in Java and XML and a movie rental web app in React, HTML, CSS, and JavaScript, incorporating features like categorization, responsive layouts, and interactive components. Skilled in aligning application design with user needs, ensuring intuitive workflows, and integrating front-end design with backend logic for seamless performance.
+                </p>
+                <a href="https://github.com/dashboard">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------portfolio------------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Driver2.jpg">
+                <div class="layer">
+                    <h3>Expense Tracker App</h3>
+                    <p>Expense Tracker App built using Java and XML in Android Studio, with SQLite as the database, allowing users to record and categorize incomes and expenses, track financial activity, and visualize data through intuitive layouts and charts.</p>
+                    <p> Click the link to navigate to Github Repo. </p>
+                    <a href="https://github.com/veeksh07/Expense-Tracker"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/playercar.jpg">
+                 <div class="layer">
+                    <h3>Thyriod cancer Detection</h3>
+                    <p>The Thyroid Cancer Detection project uses a CNN-based deep learning model (in Python) to analyze medical data from Kaggle and detect the presence of thyroid cancer.</p>
+                    <p> Click the link to navigate to Github Repo.</p>
+                    <a href="https://github.com/veeksh07/thyroid-cancer-detection"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Car4.JPG">
+                 <div class="layer">
+                    <h3>Movie Rental</h3>
+                    <p>The Movie-Rental Fullstack project is a full-stack web application built using HTML, CSS, JavaScript, ReactJS, and Python, allowing users to browse, rent, and manage movies with a connected database and interactive interface.</p>
+                    <p> Click the link to navigate to Github Repo.</p>
+                    <a href="https://github.com/veeksh07/Movie-Rental-Fullstack"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <a href="https://github.com/dashboard" class="btn">See more</a>
+    </div>
+</div>
+<!--------------------------------contact------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>bnveekshitha@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9088789455</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/veekshitha-b-n/"><i class="fa-brands fa-linkedin"></i></a> <a href="https://github.com/dashboard"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Veeksh_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <!----<span id="msg">Message sent successfully</span>----->
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i> copyright veekshitha. <i class="fa-solid fa-exclamation"></i>  The images used only for portfolio available online.</p>
+    </div>
+</div>
+<script> 
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwk-LKd3O233BLXuEq7BDrfgj2psG7xwYsw6nczqULiMipu-3FSq6xONY9gctMidXzsrg/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById('msg');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.textContent = "Message sent successfully!";
+        setTimeout(() => {
+          msg.textContent = "";
+        }, 5000);
+        form.reset(); 
+      })
+      .catch(error => {
+        msg.textContent = "Error! Please try again.";
+        console.error('Error!', error.message);
+
+        setTimeout(() => {
+          msg.textContent = "";
+        }, 5000);
+      });
+  });
+});
+</script>
+
+</body>
+
+</html>
